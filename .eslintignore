@@ -1,0 +1,14 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build directories
+build/
+dist/
+
+# Ignore specific files
+config.js
+*.log
+
+# Ignore all files with a specific extension
+*.png
+*.jpg
