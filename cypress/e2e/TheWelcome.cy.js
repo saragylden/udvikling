@@ -30,5 +30,22 @@ describe('TheWelcome component', () => {
       cy.get('.item:nth-child(5) h3').should('contain.text', 'Support Vue')
       cy.get('.item:nth-child(5) a[href="https://vuejs.org/sponsor/"]').should('exist')
     })
+  
+    it('renders all icons correctly', () => {
+      // Check if the Documentation icon is visible
+      cy.get('.item:nth-child(1) i svg').should('exist')
+  
+      // Check if the Tooling icon is visible
+      cy.get('.item:nth-child(2) i svg').should('exist')
+  
+      // Check if the Ecosystem icon is visible
+      cy.get('.item:nth-child(3) i svg').should('exist')
+  
+      // Check if the Community icon is visible
+      cy.get('.item:nth-child(4) i svg').should('exist')
+  
+      // Check if the Support Vue icon is visible
+      cy.get('.item:nth-child(5) i svg').should('exist')
+    })
   })
   
